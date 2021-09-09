@@ -1,0 +1,703 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+
+a {
+   color: #353535;
+   text-decoration: none;
+   display: inline-block;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   line-height: 24px;
+   color: #353535;
+   font-weight: 400;
+}
+
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 100px;
+}
+
+.btn__menu {
+   width: 40px;
+   display: none;
+}
+
+.btn__menu div {
+   height: 5px;
+   background-color: #353535;
+   margin-bottom: 5px;
+}
+
+.menu__list {
+   display: flex;
+}
+
+.menu__list a:hover {
+   color: #4d74ff;
+}
+
+.menu__list li + li {
+   padding-left: 40px;
+}
+
+.menu__list a {
+   font-size: 16px;
+   color: #353535;
+   font-weight: 700;
+   font-family: "Montserrat", sans-serif;
+}
+
+.top {
+   background-color: #4d74ff;
+}
+
+.top__inner {
+   display: flex;
+   flex-wrap: wrap;
+   padding-top: 96px;
+   justify-content: space-between;
+}
+
+.about-top__img img {
+   width: 512px;
+}
+
+.top h6,
+.top h2 {
+   font-weight: 400;
+   color: #fff;
+}
+
+.title {
+   line-height: 62px;
+   font-size: 52px;
+}
+
+.top__h2 {
+   max-width: 435px;
+}
+
+.title span {
+   font-weight: 700;
+}
+
+.top h6 {
+   margin-top: 32px;
+   max-width: 535px;
+}
+
+.about__top {
+   padding: 86px 0;
+}
+
+.about-top__img {
+   padding-left: 50px;
+}
+
+.mission__img {
+   padding: 100px 0;
+}
+
+.mission {
+   margin-top: 96px;
+   max-width: 535px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.mission__h6 span {
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.mission__text {
+   padding-left: 225px;
+   padding-top: 125px;
+}
+
+.about__liga {
+   margin: 96px auto 250px;
+}
+
+.about__liga-h2 {
+   max-width: 899px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.about__liga-h6 {
+   max-width: 818px;
+   font-weight: 400;
+   color: #fff;
+   margin: 32px auto 0;
+}
+
+.btn-study {
+   margin: 0 auto;
+   padding-bottom: 40px;
+}
+
+.button-study {
+   width: 120px;
+   min-height: 30px;
+   color: #fff;
+   margin: 0 auto;
+   text-align: center;
+   margin: 0 122px;
+}
+
+.education {
+   padding: 100px 0 200px;
+}
+
+.education__h2 {
+   max-width: 700px;
+   margin: 0 auto;
+}
+
+.education__inner {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.education h3 {
+   line-height: 30px;
+   font-size: 24px;
+}
+
+.education h6 {
+   font-weight: normal;
+   margin-top: 15px;
+   max-width: 290px;
+}
+
+.education__inner-div {
+   margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.education__div {
+   margin-left: 40px;
+}
+
+.circle {
+   width: 160px;
+   height: 160px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-shrink: 0;
+   margin-right: 32px;
+   background-color: #4d74ff;
+   border-radius: 50%;
+   margin: auto 0;
+}
+
+.circle__green {
+   background-color: #2ec24f;
+}
+
+.circle__red {
+   background-color: #ff5050;
+}
+
+.blue {
+   color: #4d74ff;
+}
+
+.green {
+   color: #2ec24f;
+}
+
+.red {
+   color: #ff5050;
+}
+
+.circle__img {
+   width: 80px;
+   height: 80px;
+}
+
+.team {
+   margin-bottom: 120px;
+}
+
+.team__h2 {
+   max-width: 453px;
+   margin: 0 auto 25px;
+}
+
+.team__h2 span {
+   color: #4d74ff;
+}
+
+.team__h6 {
+   max-width: 818px;
+   margin: 30px auto 0;
+   text-align: center;
+}
+
+.team-box {
+   display: flex;
+   box-shadow: 0 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+
+.team-slider {
+   margin-top: 100px;
+}
+
+.team--slider .slick-list {
+   margin: 0 -50px;
+}
+
+.team-slider .slick-slide {
+   margin: 0 50px;
+   padding-bottom: 70px;
+}
+
+.team-slider .slick-dots {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+
+.team-slider .slick-dots li {
+   margin: 0 8px;
+}
+
+.team-slider .slick-dots li.slick-active button {
+   background-color: #fff;
+   border: 2px solid #4d74ff;
+}
+
+.team-slider .slick-dots button {
+   font-size: 0;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   padding: 0;
+   border: none;
+   background-color: #4d74ff;
+}
+
+.team-box__images {
+   background-color: #4d74ff;
+   width: 190px;
+   min-height: 350px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.team-box__images img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+}
+
+.team-box__content {
+   background-color: #fff;
+   width: 330px;
+   font-size: 16px;
+   line-height: 26px;
+   padding: 0 40px;
+   min-height: 350px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.team-box__text {
+   margin-bottom: 30px;
+}
+
+.team-box__author span {
+   color: #4d74ff;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 700;
+}
+
+.footer {
+   background-color: #353535;
+   padding: 80px 0 125px;
+   color: #fff;
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-col__logo {
+   width: 263px;
+}
+
+.footer__logo {
+   margin-bottom: 30px;
+}
+.footer__text {
+   font-size: 13px;
+   left: 22px;
+   padding-bottom: 30px;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social__item {
+   display: inline-block;
+   padding: 20px 25px 20px 0;
+}
+
+.social__item svg {
+   width: 30px;
+   height: 30px;
+}
+
+.social__item a:hover path {
+   fill: #727272;
+}
+
+.footer__title {
+   font-size: 16px;
+   font-family: "Montserrat", sans-serif;
+   margin-bottom: 30px;
+}
+
+.footer-menu {
+   width: 165px;
+}
+
+.footer__list {
+   list-style: none;
+}
+
+.footer__list a {
+   font-size: 13px;
+   margin-bottom: 8px;
+   color: #fff;
+}
+
+.footer__list a:hover {
+   color: #4d74ff;
+}
+
+.footer-form {
+   width: 263px;
+}
+
+.footer-form input,
+.footer-form textarea {
+   border: 1px solid rgba(255, 255, 255, 0.05);
+   background-color: transparent;
+   height: 38px;
+   display: block;
+   width: 100%;
+   padding: 0 12px;
+   color: #fff;
+   font-size: 11px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+.footer-form input::placeholder,
+.footer-form textarea::placeholder {
+   color: #fff;
+   font-size: 11px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+.footer-form textarea {
+   padding: 12px;
+   height: 85px;
+   resize: none;
+   margin-bottom: 10px;
+}
+
+.footer-form button {
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 11px;
+   font-family: "Montserrat", sans-serif;
+   font-size: 13px;
+   border: none;
+   background-color: #4d74ff;
+   padding: 10px;
+   cursor: pointer;
+}
+
+@media (max-width: 1265px) {
+   .team-slider .slick-list {
+      margin: 0;
+   }
+
+   .team-slider .slick-slide {
+      margin: 0;
+   }
+   .team-box {
+      box-shadow: none;
+   }
+}
+
+@media (max-width: 1150px) {
+   .about-top__img img {
+      width: 312px;
+   }
+
+   .about-top__img {
+      margin: auto;
+   }
+
+   .mission__img img {
+      width: 312px;
+   }
+   .mission__text {
+      padding-left: 0;
+      padding-top: 65px;
+   }
+}
+
+@media (max-width: 1105px) {
+   .team-slider {
+      margin-top: 60px;
+   }
+   .team-box {
+      max-width: 520px;
+      margin: 0 auto;
+   }
+}
+
+@media (max-width: 1050px) {
+   .education__inner {
+      justify-content: center;
+   }
+
+   .footer__inner {
+      flex-wrap: wrap;
+   }
+
+   .footer-col__logo {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 992px) {
+   .menu__list {
+      display: none;
+      position: absolute;
+      top: 87px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #353535;
+      z-index: 5;
+   }
+
+   .menu__list li {
+      margin-left: 0;
+      padding-left: 0 !important;
+   }
+
+   .menu__list a {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid #353535;
+      background-color: white;
+   }
+
+   .btn__menu {
+      display: block;
+   }
+
+   .education__h2 {
+      text-align: center;
+   }
+}
+
+@media (min-width: 992px) {
+   .menu__list {
+      display: flex !important;
+   }
+}
+
+@media (max-width: 950px) {
+   .title {
+      line-height: 48px;
+      font-size: 42px;
+   }
+   .top h6 {
+      max-width: 350px;
+   }
+}
+
+@media (max-width: 850px) {
+   .top__inner {
+      justify-content: space-around;
+   }
+
+   .about-top__img {
+      padding: 0;
+   }
+
+   .about-top__img img {
+      width: 200px;
+   }
+
+   .mission__img img {
+      width: 200px;
+   }
+
+   .mission__text {
+      padding: 0;
+   }
+}
+
+@media (max-width: 750px) {
+   .btn-study {
+      display: none;
+   }
+
+   .about__liga {
+      margin: 96px auto 100px;
+   }
+
+   .education {
+      padding-bottom: 100px;
+   }
+
+   .footer-form {
+      width: 100%;
+      margin-top: 30px;
+   }
+
+   .footer__inner {
+      justify-content: flex-start;
+   }
+
+   .footer-menu {
+      margin-left: 50px;
+   }
+}
+
+@media (max-width: 670px) {
+   .top__h2 {
+      max-width: 265px;
+   }
+
+   .top h6 {
+      max-width: 300px;
+   }
+
+   .top__inner {
+      justify-content: space-between;
+   }
+
+   .about__liga-h6 {
+      max-width: 550px;
+   }
+
+   .title {
+      line-height: 36px;
+      font-size: 32px;
+   }
+
+   .mission__h6 span {
+      font-size: 16px;
+   }
+
+   .team__h2 {
+      text-align: center;
+   }
+}
+
+@media (max-width: 580px) {
+   .team-box {
+      display: block;
+   }
+   .team-box__images {
+      width: 100%;
+      height: 200px;
+   }
+   .team-box__content {
+      width: 100%;
+      padding: 20px;
+      min-height: 260px;
+   }
+   .team-slider .slick-slide {
+      padding-bottom: 30px;
+   }
+
+   .team-box__images img {
+      width: 200px;
+      height: 200px;
+   }
+}
+
+@media (max-width: 525px) {
+   .top__inner {
+      justify-content: space-around;
+   }
+
+   .about-top__img img {
+      width: 300px;
+   }
+
+   .mission__img img {
+      width: 300px;
+   }
+
+   .mission__img {
+      padding: 100px 0 0;
+   }
+
+   .top__h2 {
+      max-width: 300px;
+   }
+
+   .mission__text {
+      text-align: center;
+   }
+
+   .circle {
+      margin: 0 auto;
+   }
+
+   .education__div {
+      margin: 40px auto;
+   }
+
+   .footer-menu {
+      margin-left: 50px;
+   }
+}
+
+@media (max-width: 465px) {
+   .footer-menu {
+      margin-bottom: 30px;
+      width: 100%;
+   }
+   .footer-form {
+      margin-top: 0;
+   }
+}
