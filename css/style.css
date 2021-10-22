@@ -677,11 +677,7 @@ a:hover svg {
 .who__we-are-list {
    display: flex;
    margin-top: 50px;
-   justify-content: space-between;
-}
-
-.who__we-are-element {
-   padding-right: 200px;
+   justify-content: space-evenly;
 }
 
 .h2 {
@@ -764,7 +760,7 @@ a:hover svg {
 }
 
 .partners__h2 {
-   max-width: 893px;
+   text-align: center;
    margin: 0 auto 100px;
 }
 
@@ -772,6 +768,7 @@ a:hover svg {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .contact {
@@ -779,8 +776,8 @@ a:hover svg {
 }
 
 .contact__h2 {
-   margin: 50px auto;
-   max-width: 334px;
+   margin: 50px 0;
+   text-align: center;
 }
 
 .contact__form {
@@ -800,10 +797,7 @@ a:hover svg {
    width: 300px;
    padding-left: 25px;
    border-radius: 20px;
-}
-
-.input-name {
-   margin-right: 50px;
+   margin-top: 30px;
 }
 
 .contact-message textarea {
@@ -915,6 +909,12 @@ a:hover svg {
    .how-to-work__list li {
       padding-bottom: 35px;
    }
+   .partners__top-inner img {
+      width: 400px;
+   }
+   .partners__top-ready h2 {
+      margin-bottom: 0;
+   }
 }
 
 @media (max-width: 992px) {
@@ -1001,6 +1001,9 @@ a:hover svg {
    .steps {
       padding-bottom: 35px;
    }
+   .partners__top-inner img {
+      width: 300px;
+   }
 }
 
 @media (max-width: 750px) {
@@ -1027,6 +1030,34 @@ a:hover svg {
 
    .footer-menu {
       margin-left: 50px;
+   }
+   .partners__top-inner {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   .partners__top-ready {
+      flex-direction: column;
+   }
+   .partners__top-ready h6 {
+      margin: 20px 0;
+   }
+   .who__we-are-list {
+      flex-wrap: wrap;
+      justify-content: start;
+   }
+   .who__we-are-element {
+      width: 200px;
+      padding-top: 40px;
+   }
+   .who__we-are-element p {
+      font-size: 18px;
+   }
+   .h2 {
+      line-height: 30px;
+      font-size: 26px;
+   }
+   .who__we-are-tekst h6 {
+      font-size: 14px;
    }
 }
 
@@ -1123,6 +1154,9 @@ a:hover svg {
    .footer-menu {
       margin-left: 50px;
    }
+   .partners__top-ready h2 {
+      width: 170px;
+   }
 }
 
 @media (max-width: 465px) {
@@ -1141,5 +1175,8 @@ a:hover svg {
    }
    .formularz {
       font-size: 15px;
+   }
+   .who__we-are-list {
+      justify-content: center;
    }
 }
